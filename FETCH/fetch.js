@@ -22,3 +22,29 @@ fetch('https://api-to-call.com/endpoint').then(response => {
     .then(jsonResponse => {
         return jsonResponse
     });
+
+
+/* FETCH POST BOILPLATE*/
+/*Chain a .then() method to the end of the fetch() function and pass it the success callback arrow function as its first argument. The success callback function takes one parameter, response.
+
+.then() will fire only after the promise status of fetch() has been resolved.
+
+The settings object you passed to the fetch() function will contain two properties: method, with a value of 'POST', and body, with a value of JSON.stringify({id: '200'}).
+
+This second argument determines that this request is a POST request and what information will be sent to the API.
+
+*/
+fetch('https://api-to-call.com/endpoint', {
+    method: 'POST',
+    body: JSON.stringify({id: '200'})
+}).then((response) => {
+        if(response.ok){
+            return response.json();
+        }
+        throw new Error('Request failed!');
+    }, (networkError) => {
+        console.log(networkError.message);
+    }
+).then((jsonResponse) => {
+
+});
