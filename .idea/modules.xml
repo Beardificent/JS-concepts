@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../xhr-request/.idea/xhr-request.iml" filepath="$PROJECT_DIR$/../xhr-request/.idea/xhr-request.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JS-concepts/.idea/JS-concepts.iml" filepath="$PROJECT_DIR$/../JS-concepts/.idea/JS-concepts.iml" />
     </modules>
   </component>
 </project>
